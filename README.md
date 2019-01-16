@@ -3,7 +3,7 @@ Execute something as long as the user is idling.
 
 ## requirements
 
-* xprintidle (system level)
+* xprintidle
 * psutil
 
 ## example

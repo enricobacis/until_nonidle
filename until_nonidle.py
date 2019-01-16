@@ -3,14 +3,11 @@
 import sys
 import time
 import psutil
+import xprintidle
 import subprocess
 
 
 POLL_MILLISECONDS = 100
-
-
-def get_idletime():
-    return int(subprocess.check_output(["xprintidle"]))
 
 
 def kill_all(pid):
@@ -28,7 +25,7 @@ def main():
     while p.poll() is None:
         # process is alive
 
-        current_idletime = get_idletime()
+        current_idletime = xprintidle.idle_time()
 
         if current_idletime < last_idletime:
             retval = 0
