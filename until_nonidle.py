@@ -40,4 +40,8 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    if len(sys.argv) < 2:
+        print("Usage: %s CMD ARGS" % sys.argv[0])
+
+    else:
+        sys.exit(main())
