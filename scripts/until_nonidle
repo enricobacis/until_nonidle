@@ -1,1 +1,11 @@
-../until_nonidle.py
+#!/usr/bin/env python3
+
+import sys
+import until_nonidle
+
+
+if len(sys.argv) == 1:
+    print("Usage: %s CMD ARGS" % sys.argv[0])
+
+else:
+    sys.exit(until_nonidle.do(sys.argv[1:]))

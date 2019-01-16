@@ -9,7 +9,7 @@ setup(
     version='0.1',
     description='Execute something as long as the user is idling.',
     long_description=long_description,
-    install_requires=['psutils', 'xprintidle'],
+    install_requires=['psutil', 'xprintidle'],
     url='http://github.com/enricobacis/until_nonidle',
     author='Enrico Bacis',
     author_email='enrico.bacis@gmail.com',
