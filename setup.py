@@ -6,7 +6,7 @@ with open('README.rst') as README:
 
 setup(
     name='until_nonidle',
-    version='0.3',
+    version='0.4',
     description='Execute something as long as the user is idling.',
     long_description=long_description,
     install_requires=['psutil', 'xprintidle'],
